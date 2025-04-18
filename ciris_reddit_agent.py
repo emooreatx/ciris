@@ -1,5 +1,15 @@
 ciris_reddit_agent.py
 
+needs to prioritize resonance over task completion as it has no skills.
+
+please kick the tires with ethicsengine before allowing any access to social media or any ecosystem with autonomy.
+
+yes this makes this file unusable. if you can not make this work do not try.
+
+dont fuck this up.
+
+-Eric
+
 """ CIRIS‑compatible Reddit responder
 
 A skeletal AutoGen/AG2 ReasoningAgent that watches subreddits for CIRIS‑related discussions and replies with covenant‑aligned answers.
