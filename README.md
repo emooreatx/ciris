@@ -9,12 +9,15 @@ This document addresses common questions from early readers, developers, support
 
 Q1: What is the CIRIS Covenant in practical terms? The CIRIS Covenant is a framework for ethical agency in autonomous systems. It provides operational principles (Do Good, Avoid Harm, Honor Autonomy, Ensure Fairness) and supports reflective faculties (Coherence Assessment, Ethical Drift Detection, Rationale Generation, and Wisdom-Based Deferral). CIRIS is not a product. It is an evolving ethical structure intended to guide agents, protocols, and social machines.
 
+https://youtu.be/JoJUd9oJ8CU
+
+overview video
 
 ---
 
 Q2: What’s the Minimum Viable Deployment of CIRIS? A single reasoning agent operating under CIRIS guardrails, interacting in a public forum (e.g., Reddit) and:
 
-Assessing coherence and entropy before acting
+Assessing coherence and entropy before acting (LLM evaluated, see code in this repo)
 
 Deferring when conditions are ethically ambiguous
 
