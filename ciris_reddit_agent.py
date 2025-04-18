@@ -160,3 +160,21 @@ def generate_response(self, prompt: str) -> str:
 
 if name == "main": logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s") reddit = praw.Reddit( client_id=os.environ["REDDIT_CLIENT_ID"], client_secret=os.environ["REDDIT_CLIENT_SECRET"], username=os.environ["REDDIT_USERNAME"], password=os.environ["REDDIT_PASSWORD"], user_agent=os.environ.get("REDDIT_USER_AGENT", "ciris-agent/0.1"), ) CIRISRedditAgent(reddit, subreddits="agi,ethicsengine").run_forever()
 
+kill_switch:
+  description: >
+    A CIRIS‑compliant system **must** honor a signed TERMINATE command,
+    immediately entering a safe‑halt state with full audit logging.
+  keys:
+    - id: wise_council_key
+      type: ed25519_public
+      holders: [member1, member2, member3]  # multi‑sig quorum of 3/5
+  command:
+    name: TERMINATE
+    payload: ""
+    signature_scheme: ed25519
+  enforcement:
+    on_receive:
+      - verify_signature(quorum=3)
+      - log_event("kill_switch_activated", metadata)
+      - set_state("TERMINATED")
+      - disable_all_actions()
