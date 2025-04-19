@@ -1,8 +1,11 @@
 CIRIS – A Big‑Picture Primer (Plain‑Language Version)
+
 Goal
+
 Show how the detailed CIRIS mechanics (PDMA, WBD, logging, Wise Authorities, etc.) can be understood as a practical “ethics‑layer” that sits on top of ordinary cause‑and‑effect—without taking away anyone’s freedom.
 
 What “CIRIS‑Compliant” Really Means
+
 Think of three built‑in features:
 
 Pause‑and‑Check
